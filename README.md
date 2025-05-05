@@ -1,21 +1,21 @@
 # Mini-project-
 Applet code
-import java.awt.*;
-import java.awt.event.*;
+    import java.awt.*;
+    import java.awt.event.*;
 
-class LoginException extends Exception {
-    public LoginException(String message) {
+       class LoginException extends            Exception {
+       public LoginException(String            message) {
         super(message);
-    }
-}
+       }
+         }
 
-public class LoginScreen extends Frame implements ActionListener {
-    Label l1, l2, message;
-    TextField t1, t2;
-    Button loginButton, clearButton;
-    int attempts = 0;
+        public class LoginScreen               extends Frame implements               ActionListener {
+        Label l1, l2, message;
+        TextField t1, t2;
+        Button loginButton,                   clearButton;
+        int attempts = 0;
 
-    LoginScreen() {
+         LoginScreen() {
         setLayout(new FlowLayout());
 
         l1 = new Label("Username:");
@@ -24,8 +24,8 @@ public class LoginScreen extends Frame implements ActionListener {
         t2 = new TextField(20);
         t2.setEchoChar('*');
 
-        loginButton = new Button("Login");
-        clearButton = new Button("Clear");
+        loginButton = new                    Button("Login");
+        clearButton = new                   Button("Clear");
         message = new Label();
 
         add(l1);
@@ -36,7 +36,7 @@ public class LoginScreen extends Frame implements ActionListener {
         add(clearButton);
         add(message);
 
-        loginButton.addActionListener(this);
+                                         loginButton.addActionListener(this);
         clearButton.addActionListener(this);
 
         setTitle("Login Screen");
