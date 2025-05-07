@@ -2,7 +2,7 @@
 Applet code
 
 
-
+            package Samruddhi;
             import java.awt.*;
             import java.awt.event.*;
 
